@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Markdown Preview</title>
+    <!-- 引入 GitHub 风格 Markdown 样式表 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <!-- 引入 marked.js 解析引擎 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 引入 Highlight.js 语法高亮 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 35px;
+            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+        @media (max-width: 767px) {
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    <div id="content">正在载入并解析 Markdown 页面...</div>
+    <script>
+        try {
+            const markdownRawB64 = "{{md_b64}}";
+            // 兼容中文与 Emoji 的 Base64 解码逻辑
+            const markdownRaw = decodeURIComponent(escape(atob(markdownRawB64)));
+            
+            // 配置 marked.js 解析器规则
+            marked.use({
+                gfm: true,
+                breaks: true
+            });
+            
+            document.getElementById('content').innerHTML = marked.parse(markdownRaw);
+            hljs.highlightAll();
+        } catch(e) {
+            document.getElementById('content').innerHTML = "<h3 style='color: #d13438;'>Markdown 解析模块加载异常: " + e.message + "</h3>";
+        }
+    </script>
+</body>
+</html>

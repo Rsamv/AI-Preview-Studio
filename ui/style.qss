@@ -1,0 +1,232 @@
+/* ==========================================================================
+   AI Preview Studio - QSS 样式表 (Microsoft Fluent Style)
+   ========================================================================== */
+
+/* ==================== CloseConfirmDialog 样式 ==================== */
+QDialog {
+    background-color: #F8F9FA;
+}
+QDialog QLabel {
+    font-size: 13px;
+    color: #202124;
+    font-family: 'Segoe UI', Microsoft YaHei;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+QDialog QRadioButton {
+    font-size: 13px;
+    color: #3C4043;
+    font-family: 'Segoe UI', Microsoft YaHei;
+    padding: 10px 15px;
+    border: 1px solid #DADCE0;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+QDialog QRadioButton:hover {
+    border-color: #BDC1C6;
+    background-color: #F1F3F4;
+}
+QDialog QRadioButton#radio_tray:checked {
+    color: #137333;
+    font-weight: bold;
+    border-color: #137333;
+    background-color: #E6F4EA;
+}
+QDialog QRadioButton#radio_exit:checked {
+    color: #C5221F;
+    font-weight: bold;
+    border-color: #C5221F;
+    background-color: #FCE8E6;
+}
+QDialog QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 1px solid #999999;
+    background-color: white;
+}
+QDialog QRadioButton#radio_tray::indicator:checked {
+    background-color: #137333;
+    border: 4px solid #E6F4EA;
+}
+QDialog QRadioButton#radio_exit::indicator:checked {
+    background-color: #C5221F;
+    border: 4px solid #FCE8E6;
+}
+QDialog QCheckBox {
+    font-size: 12px;
+    color: #5F6368;
+    font-family: 'Segoe UI', Microsoft YaHei;
+    margin-top: 10px;
+}
+QDialog QPushButton {
+    background-color: #1A73E8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 20px;
+    font-family: 'Segoe UI', Microsoft YaHei;
+    font-size: 13px;
+    min-width: 80px;
+}
+QDialog QPushButton:hover {
+    background-color: #1557B0;
+}
+QDialog QPushButton#btn_cancel {
+    background-color: #E8EAED;
+    color: #3C4043;
+}
+QDialog QPushButton#btn_cancel:hover {
+    background-color: #DADCE0;
+}
+
+/* ==================== MainWindow 主窗口样式 ==================== */
+/* 全局背景色与字体 */
+QMainWindow, QWidget {
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+    font-family: "Microsoft YaHei UI", "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+/* 顶部紧凑一小行 */
+#top_bar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    min-height: 42px;
+    max-height: 42px;
+}
+
+/* 顶部扁平化无图标按钮 */
+.top_btn {
+    background-color: transparent;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.top_btn:hover {
+    background-color: #0078d4; /* 微软蓝 */
+    color: #ffffff;
+}
+.top_btn:pressed {
+    background-color: #005a9e;
+    color: #ffffff;
+}
+
+/* 导出网页专用高亮按钮 */
+.export_btn {
+    background-color: #0078d4; /* 微软亮蓝色 */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.export_btn:hover {
+    background-color: #106ebe; /* 稍微深一点的蓝色 */
+    color: #ffffff;
+}
+.export_btn:pressed {
+    background-color: #005a9e;
+    color: #ffffff;
+}
+
+/* 状态文本 */
+#status_label {
+    color: #5a5a5a;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* 极简指示器灯 */
+#indicator_active {
+    background-color: #107c41; /* 雅绿 */
+    border-radius: 5px;
+    min-width: 10px;
+    max-width: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    margin-top: 2px;
+}
+#indicator_inactive {
+    background-color: #d13438; /* 警示红 */
+    border-radius: 5px;
+    min-width: 10px;
+    max-width: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    margin-top: 2px;
+}
+
+/* 下拉式菜单样式 */
+QMenu {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 2px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 6px;
+}
+QMenu::item {
+    padding: 6px 28px 6px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+QMenu::item:selected {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+QMenu::separator {
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 4px 6px;
+}
+QMenu::indicator {
+    width: 12px;
+    height: 12px;
+}
+
+/* 底部日志面板，平时隐藏，弹出时带有醒目的微软蓝描边 */
+#log_panel {
+    background-color: #ffffff;
+    border-top: 2px solid #0078d4;
+    padding: 5px;
+}
+
+#lbl_console_title {
+    font-weight: bold; 
+    color: #5a5a5a; 
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+#btn_close_log {
+    background-color: transparent;
+    color: #5a5a5a;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+}
+#btn_close_log:hover {
+    background-color: #d13438; /* 红色关闭 hover */
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+#txt_log {
+    background-color: #fafafa;
+    color: #1a1a1a;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 12px;
+    border: 2px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 6px;
+}
