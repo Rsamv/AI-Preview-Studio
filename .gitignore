@@ -23,6 +23,9 @@ venv/
 output/
 *.lock
 
+# Test files
+test_*.py
+
 # Dev notes (local)
 开发路线.txt
 改进记录/

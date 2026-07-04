@@ -94,7 +94,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("AI Preview Studio - V0.8")
+        self.setWindowTitle("AI Preview Studio - V0.7")
         self.resize(1200, 850)
 
         # 1. 核心业务逻辑组件初始化
