@@ -34,6 +34,9 @@ test_*.py
 .env
 .env.*
 
+# Build artifacts
+*.zip
+
 # OS
 Thumbs.db
 Desktop.ini

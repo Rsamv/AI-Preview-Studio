@@ -52,7 +52,7 @@ AI 截断输出的 HTML 自动补全未闭合标签（`<style>`、`<script>` 及
 
 ## 截图
 
-> TODO: 添加截图
+![HTML渲染预览](assets/html渲染.png)
 
 ## 快速开始
 
