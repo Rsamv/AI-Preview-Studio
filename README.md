@@ -64,7 +64,7 @@ AI 截断输出的 HTML 自动补全未闭合标签（`<style>`、`<script>` 及
 
 ```bash
 # 克隆仓库
-git clone https://github.com/YOUR_USERNAME/AI-Preview-Studio.git
+git clone https://github.com/Rsamv/AI-Preview-Studio.git
 cd AI-Preview-Studio
 
 # 创建虚拟环境
