@@ -147,4 +147,4 @@ AI Preview Studio/
 
 ## License
 
-MIT
+MIT — [Rsamv](https://github.com/Rsamv)
