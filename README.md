@@ -85,16 +85,17 @@ python main.py
 ### 打包为 EXE
 
 ```bash
-pyinstaller AIPreviewStudio.spec
+python build.py
 ```
 
-打包产物在 `dist/AIPreviewStudio.exe`。
+打包产物在 `dist/AI-Preview-Studio/AI-Preview-Studio.exe`。
 
 ## 项目结构
 
 ```
 AI Preview Studio/
 ├── main.py                  # 入口：单实例锁 + QApplication 启动
+├── build.py                 # 一键打包发布脚本
 ├── core/
 │   ├── config.py            # 应用配置常量
 │   ├── server.py            # 本地 HTTP 服务器 (加载 CDN 资源)
@@ -105,7 +106,7 @@ AI Preview Studio/
 ├── preview/
 │   └── webview.py           # QWebEngineView 封装 + Ctrl+S 拦截
 ├── requirements.txt         # Python 依赖
-├── AIPreviewStudio.spec     # PyInstaller 打包配置
+├── AI-Preview-Studio.spec   # PyInstaller 打包配置
 └── logo.ico                 # 应用图标
 ```
 
