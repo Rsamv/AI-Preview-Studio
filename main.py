@@ -19,7 +19,9 @@ def main():
     app.lock_file = lock_file
 
     window = MainWindow()
-    window.show()
+    # 静默启动：不显示主窗口，直接在系统托盘后台运行
+    # 用户可通过托盘图标右键菜单"显示主窗口"或单击托盘图标来唤起窗口
+    # window.show()
 
     sys.exit(app.exec())
 
